@@ -331,7 +331,8 @@ body {
 
 @media (max-width: 800px ){
 	.game-title{
-		font-size: 34px;
+		font-size: 22px;
+		padding-bottom: 25px;
 	}
 	.wrapper{
 		padding: 20px;
