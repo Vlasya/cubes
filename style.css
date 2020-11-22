@@ -14,7 +14,7 @@ body {
 .wrapper {
 	margin: 0 auto;
 	height: 100vh;
-	padding: 30px;
+	padding: 10px;
 }
 
 .game-container {
@@ -236,22 +236,46 @@ body {
 
 @media (max-width: 1600px ) { 
 	.game-area {
-		width: 600px;
-		height: 600px;
-		min-height: 600px;
+		width: 500px;
+		height: 500px;
+		min-height: 500px;
 	}
 	.game-control_btns {
 		margin-right: 5px;
+	}
+	.game-control{
+		width: 65%;
+	}
+	.red {
+		width: 40px;
+		height: 40px;
+	}
+	
+	.blue {
+		width: 30px;
+		height: 30px;
 	}
 }
 
-@media (max-width: 1300px ) { 
+@media (max-width: 1250px ) { 
 	.game-area {
-		width: 600px;
-		height: 600px;
-		min-height: 600px;
+		width: 500px;
+		height: 500px;
+		min-height: 500px;
 	}
 	.game-control_btns {
 		margin-right: 5px;
+	}
+	.game-control{
+		width: 65%;
+	}
+	.red {
+		width: 40px;
+		height: 40px;
+	}
+	
+	.blue {
+		width: 30px;
+		height: 30px;
 	}
 }
