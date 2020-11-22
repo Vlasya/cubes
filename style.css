@@ -231,7 +231,7 @@ body {
 }
 
 
-
+/* media */
 
 
 @media (max-width: 1600px ) { 
@@ -277,5 +277,57 @@ body {
 	.blue {
 		width: 30px;
 		height: 30px;
+	}
+}
+
+@media (max-width: 1060px ){
+	.game-title{
+		font-size: 48px;
+	}
+	.game-control {
+		width: 85%;
+  }
+  .game-area {
+	width: 400px;
+	height: 400px;
+	min-height: 400px;
+  }
+  .red {
+	width: 30px;
+	height: 30px;
+}
+.blue {
+	width: 20px;
+	height: 20px;
+}
+.resultUser {
+	height: 30px;
+}
+.nameUser,
+.coinsUser {
+	padding: 0;
+	font-size: 16px;
+}
+.coinsUser {
+	padding: 0;
+}
+.game-info_title {
+	font-size: 16px;
+}
+.game-info_points, .game-info_time{
+	margin-right: 5px;
+}
+}
+
+
+@media (max-width: 800px ){
+	.game-title{
+		font-size: 34px;
+	}
+	.wrapper{
+		padding: 20px;
+	}
+	.game-area{
+		margin-right: 5px;
 	}
 }
