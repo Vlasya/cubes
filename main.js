@@ -35,7 +35,6 @@ console.log('areaWidth: ', areaWidth);
 
 //ширина-высота каждого блока сетки
 let widthRendersquare = Math.floor((areaWidth / grid) - 1)
-console.log('widthRendersquare: ', widthRendersquare);
 
 
 // Поле таймера
