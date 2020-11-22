@@ -31,8 +31,12 @@ let newGamebtn = document.querySelector('#newGame');
 let gameArea = document.querySelector('.game-area')
 //Ширина игровой области
 let areaWidth = gameArea.clientWidth;
+console.log('areaWidth: ', areaWidth);
+
 //ширина-высота каждого блока сетки
-let widthRendersquare = (areaWidth / grid) - 1
+let widthRendersquare = Math.floor((areaWidth / grid) - 1)
+console.log('widthRendersquare: ', widthRendersquare);
+
 
 // Поле таймера
 let timeCountGame = document.querySelector('#time-count');
