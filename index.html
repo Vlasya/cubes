@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cubes</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<h1 class="game-title">Cubes</h1>
+		<div class="game-container">
+			<div class="game-field">
+				<div class="game-control">
+					<div class="game-control_btns">
+						<button id="start" type="button" class="btn btn-success text-uppercase">Stop_</button>
+						<button id="newGame" type="button" class="btn btn-primary text-uppercase">New game</button>
+					</div>
+					<!-- /.game-control_btns -->
+					<div class="game-control_info">
+						<div class="game-info_points">
+							<span class="game-info_text">Points</span>
+							<span class="game-info_area text-center" id="pointsCount">0</span>
+						</div>
+						<!-- /.game-info_points -->
+						<div class="game-info_time">
+							<span class="game-info_text">Time left</span>
+							<span class="game-info_area text-center text-uppercase" id="time-count">00 : 00</span>
+						</div>
+						<!-- /.game-info_time -->
+					</div>
+					<!-- /.game-control_info -->
+				</div>
+				<!-- /.game-control -->
+				<div class="game-area">
+
+				</div>
+				<!-- /.game-area -->
+			</div>
+			<!-- /.game-field -->
+			<div class="game-info">
+				<div class="game-info_title">
+				<a href="info_page.html"target="_blank"class="game-instruction" ><img src="image/information.svg" alt="info" title="Instructions for the Game"></a>
+				<h4 class="game-info_title"> Result table</h4>
+			</div>
+				
+			</div>
+			<!-- /.game-info -->
+		</div>
+		<!-- /.game-container -->
+
+		
+<!-- Modal container -->
+		<div id="finishModal" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="my-modal-title"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered " role="document">
+				<div class="modal-content finishModalArea">
+					<div class="modal-header finishModalArea">
+						<h5 class="modal-title" id="my-modal-title">Your score </h5>
+					
+					</div>
+					<div class="modal-body finishModalArea ">
+						<form id="form">
+								<div class="form-group">
+									<span>Your score:</span>
+									<span class="userScore"></span>
+								</div>
+							<div class="form-group">
+								<label for="userName">Enter your name</label>
+								<input id="userName" class="user-name" type="text" class="form-control-sm"required placeholder="Enter your name">
+							</div>
+							<button  id="saveResult" class="btn btn-success">Save</button>
+						</form>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- /.modal-container -->
+	</div>
+	<!-- /.wrapper -->
+	
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="main.js"></script>
+
+</body>
+
+</html>

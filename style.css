@@ -1,0 +1,257 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Nerko One', cursive;
+	box-sizing:border-box;
+
+}
+
+body {
+	background: rgb(79 64 251 / 58%) !important;
+	box-sizing:border-box;
+	
+}
+
+.wrapper {
+	margin: 0 auto;
+	height: 100vh;
+	padding: 30px;
+}
+
+.game-container {
+	display: flex;
+	width: 80%;
+	height: 80vh;
+	margin: 0 auto;
+}
+
+/* control block */
+.game-field {
+	flex-basis: 75%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	min-height: 700px;
+	margin-top: -45px;
+}
+
+.game-control {
+	display: flex;
+	justify-content: space-between;
+	flex-basis: 7%;
+	width: 48%;
+}
+
+.game-control_btns {
+	margin-right: 20px;
+}
+
+.game-title {
+	display: inline-block;
+	text-align: left;
+	font-size: 78px;
+	margin-left: 20px;
+	margin: 0;
+}
+
+.game-control_info {
+	display: flex;
+	justify-content: space-around;
+	font-size: 22px;
+}
+
+.game-info_points,
+.game-info_time {
+	display: flex;
+	flex-direction: column;
+	margin-right: 50px;
+	margin-top: -20px;
+
+}
+.game-info_area {
+	width: 70px;
+	height: 30px;
+	border: 3px solid #5970c39e;
+	border-radius: 10%;
+	margin: 0 auto;
+	line-height: 26px;
+}
+
+.game-area {
+	background-color: rgb(102, 101, 101, 0.64);
+	border: 3px solid #5970c39e;
+	border-radius: 1%;
+	width: 700px;
+	height: 700px;
+	min-height: 700px;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+
+/* info block */
+.game-info {
+	flex-basis: 19%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	border-top: 3px solid #5970c39e;
+	border-radius: 1%;
+}
+.game-info_title{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 20px;
+}
+.game-instruction {
+	width: 20px;
+	height: 20px;
+}
+.resultUser{
+	display: flex;
+	justify-content: center;
+	border-right: 3px solid #5970c39e;
+	border-left: 3px solid #5970c39e;
+	border-top: 3px solid #5970c39e;
+	height: 50px;
+
+}
+.nameUser{
+	flex-basis: 70%;
+	display: inline-block;
+	margin-right: 10%;
+	padding: 15px;
+	font-size: 24px;
+	text-transform: uppercase;
+	
+}
+.coinsUser{
+	flex-basis: 20%;
+	display: inline-block;
+	padding: 15px;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.game-info_title {
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.game-info_text {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.red {
+	width: 60px;
+	height: 60px;
+	background-color: red;
+	border-radius: 7px
+}
+
+.blue {
+	width: 50px;
+	height: 50px;
+	background-color: blue;
+	border-radius: 7px
+}
+
+.orange {
+	width: 50px;
+	height: 50px;
+	background-color: orange;
+	border-radius: 7px
+}
+
+.green {
+	width: 40px;
+	height: 40px;
+	background-color: green;
+	border-radius: 7px
+}
+
+.black {
+	width: 30px;
+	height: 30px;
+	background-color: black;
+	border-radius: 7px
+}
+
+.yellow {
+	width: 20px;
+	height: 20px;
+	background-color: yellow;
+	border-radius: 7px
+}
+
+.cube-area {
+	min-height: 50px;
+}
+
+.finishModalArea {
+	background-color: rgb(50, 50, 56, 0.68);
+	color: white;
+	font-size: 24px;
+}
+
+.user-name::placeholder {
+	font-size: 24px;
+}
+
+
+
+/* instruction-page */
+
+
+.instruction-wrapper{
+	display: flex;
+	flex-direction: column;
+	align-items:center
+}
+.instruction-title{
+	align-self: flex-start;
+	margin-left: 20px;
+}
+.instruction-container{
+	border-right: 3px solid #5970c39e;
+	border-top: 3px solid #5970c39e;
+	padding: 20px;
+}
+.instruction-name{
+	font-size: 42px;
+	margin-bottom: 30px;
+}
+
+.instruction-text>ul>li{
+	margin-bottom: 20px;
+	font-size: 24px;
+}
+
+
+
+
+
+@media (max-width: 1600px ) { 
+	.game-area {
+		width: 600px;
+		height: 600px;
+		min-height: 600px;
+	}
+	.game-control_btns {
+		margin-right: 5px;
+	}
+}
+
+@media (max-width: 1300px ) { 
+	.game-area {
+		width: 600px;
+		height: 600px;
+		min-height: 600px;
+	}
+	.game-control_btns {
+		margin-right: 5px;
+	}
+}
