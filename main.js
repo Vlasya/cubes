@@ -1,4 +1,4 @@
-const timeGame = 5 //Время на игру
+const timeGame = 60 //Время на игру
 let start = true, //старт
 	time = timeGame, // время на игру для расчетов
 	gameIsRun = false, // Игра запущена/нет
